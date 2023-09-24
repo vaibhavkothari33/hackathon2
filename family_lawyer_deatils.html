@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CriminialDetails</title>
+    <link rel="stylesheet" href="CodeJustice.css">
+    <link rel="stylesheet" href="button.css">
+    <style>
+        .pos {
+            height: 100px;
+            width: 1050px;
+            position: absolute;
+            top: 20 px;
+            right: 20px;
+
+
+        }
+
+        h1 {
+            height: 115px;
+            width: 100%;
+            padding-top: 20px;
+            position: absolute;
+            top: -55px;
+            background-color: #000080;
+            color: white;
+            z-index: -1;
+            font-size: 85px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        .boxw{
+            height: 470px;
+            width: 950px;
+            background-color: white;
+            position: absolute;
+            top: 137px;
+            left: 350px;
+        }
+        .monday{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            position: absolute;
+            top: 60px;
+            left: 55px;
+        }
+        .blv{
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            top: 35px;
+            left: 200px;
+            font-size: 15px;
+
+        }
+        .name{
+            height: 85px;
+            width: 120px;
+            font-size: 22px;
+            position: absolute;
+            top: 255px;
+            left: 30px;
+
+        }
+        .button{
+            text-align: center;
+            border-radius: 20px;
+            padding-top: 10px;
+            height: 40px;
+            width:240px ;
+            background-color: blueviolet;
+            color: white;
+            font-size:25px ;
+            position: absolute;
+            top: 400px;
+            left: 400px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sliderbar">
+        <ul>
+            <li>
+                <a href="">
+                    <span class="icon"><!--<ion-icon name="finger-print-outline">--></ion-icon></span>
+                    <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <span class="icon icon1">
+                        <div class="imagepro">
+                            <img class="imagepro" src="profileimage.jpeg" height="30px" width="30px">
+                        </div>
+                    </span>
+                    <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="CodeJustice.html">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="icon"><ion-icon name="ticket-outline"></ion-icon></span>
+                    <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;UnderWay</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="icon"><ion-icon name="gift-outline"></ion-icon></span>
+                    <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;Rewards</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;Setting</span>
+                </a>
+            </li>
+            <div class="bottom">
+
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;Logout</span>
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+    </ul>
+    </div>
+
+    <h1 align="center">
+        <div class="pos"> Family Lawyer &nbsp;</div>
+    </h1>
+    <div class="boxw">
+        <div class="circle"><img class="monday" src="Lawyer11img.jpeg" alt="">
+            <pre class="name">Mr.Sam Bennett</pre>
+            <pre class="blv">
+            <b><i> Mr.Sam Bennett</i> </b> a seasoned lawyer 
+            with an impressive 21-year career in the legal profession. Over the 
+            course of his distinguished career, he has handled a remarkable total 
+            of <b>'1372'</b> cases, showcasing his extensive experience and 
+            versatility in various areas of the law. What truly distinguishes 
+            Mr.Sam Bennett legal acumen is his remarkable track record, having 
+            secured victories in an  1200 of those cases.
+
+            Mr.Sam Bennett  career is a testament to his unwavering com
+            With an extensive portfolio of successful cases, He has 
+            undoubtedly established himself as a prominent figure in the legal community.
+            His dedication to the practice of law and his exceptional success rate are a 
+            testament to his passion for justice and his commitment to providing top-tier 
+            legal representation to those who seek his expertise.
+            Emitment to his clients and his exceptional legal skills. His ability to 
+            navigate complex legal issues and consistently secure favorable outcomes 
+            for the majority of his cases underscores his reputation as a highly 
+            respected and sought-after legal professional.</div>
+        </pre>
+        <!-- <div class="button">Book An Appointment</div> -->
+    </div>
+    <button id="bookButton">Book An Appointment</button>
+    <!-- Pop-up Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Booking Confirmation</h2>
+            <p>Your booking has been confirmed.</p>
+        </div>
+    </div>
+    <script>
+       // Get the "Book Now" button and the confirmation modal
+       const bookButton = document.getElementById("bookButton");
+       const confirmationModal = document.getElementById("confirmationModal");
+
+       // Get the close button for the modal
+       const closeModal = document.getElementById("closeModal");
+
+       // When the "Book Now" button is clicked, display the modal
+       bookButton.addEventListener("click", () => {
+           confirmationModal.style.display = "block";
+       });
+
+       // When the close button in the modal is clicked, hide the modal
+       closeModal.addEventListener("click", () => {
+           confirmationModal.style.display = "none";
+       });
+
+       // Close the modal if the user clicks anywhere outside of it
+       window.addEventListener("click", (event) => {
+           if (event.target == confirmationModal) {
+               confirmationModal.style.display = "none";
+           }
+       });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

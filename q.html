@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Question </title>
+    <link rel="stylesheet" type="text/css" href="CodeJustice.css">
+    <style>
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            padding-left: 320px;
+            font-size: 35px;
+        }
+
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+        }
+
+        /* Style the accordion panel. Note: hidden by default */
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+            padding-left: 320px;
+            font-size: 30px;
+        }
+
+        .accordion:after {
+            content: '\02795';
+            /* Unicode character for "plus" sign (+) */
+            font-size: 30px;
+            color: #777;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2796";
+            /* Unicode character for "minus" sign (-) */
+        }
+        .head{
+            height: 120px;
+            width: 100%;
+            font-size: 70px;
+            font-family: 'Times New Roman', Times, serif;
+            color:white;
+            background-color: brown;
+            text-align: center;
+          
+
+        }
+        .head1{
+            height: 80px;
+            width: 800px;
+            font-size: 70px;
+            font-family: 'Times New Roman', Times, serif;
+            color:white;
+            background-color: brown;
+            text-align: center;
+            position: absolute;
+            top: 15px;
+            right: 235px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <link rel="stylesheet" href="nav box.css"> -->
+    </head>
+
+    <body>
+        <div class="sliderbar">
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="icon"><!--<ion-icon name="finger-print-outline">--></ion-icon></span>
+                        <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <span class="icon icon1">
+                            <div class="imagepro">
+                                <img class="imagepro" src="profileimage.jpeg" height="30px"
+                                    width="30px">
+                            </div>
+                        </span>
+                        <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="CodeJustice.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="ticket-outline"></ion-icon></span>
+                        <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;UnderWay</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="gift-outline"></ion-icon></span>
+                        <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;Rewards</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;Setting</span>
+                    </a>
+                </li>
+                <div class="bottom">
+
+                    <li>
+                        <a href="">
+                            <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                            <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;Logout</span>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div class="head"><div class="head1">Frequently Asked Questions</div></div>
+        <button class="accordion">How can I create an account on Code Justice?</button>
+        <div class="panel">
+            <p>Go to the home page, on the top right hand corner there is a sign up/login option from there you can create new account or link google account.
+            </p>
+        </div>
+        <button class="accordion">What do I do if I am not happy with a lawyer? </button>
+        <div class="panel">We don’t live in a perfect world, and unfortunately sometimes things do go wrong.
+                           However there is action you can take if you aren’t happy with a lawyer.This ranges from trying to work things out with them, through to reporting a lawyer to a legal regulator.</div>
+
+        <button class="accordion">How will transparency and accountability be ensured in the services provided by legal service providers on the platform?</button>
+        <div class="panel">
+            <p>Transparency and accountability can be ensured by implementing features such as clear pricing, client reviews, service agreements, and monitoring mechanisms to track the quality and timeliness of services.
+            </p>
+        </div>
+        <button class="accordion">How to book a lawyer?</button>
+        <div class="panel">
+            <p>
+                To book a lawyer, follow these steps:<br/>
+                
+                1.Research and identify potential lawyers specializing in your legal issue.<br/>
+                2.Go to the lawyers option in the home page and check their credentials.<br/>
+                3.Contact the lawyer through provided contact information.<br/>
+                4.Arrange an initial consultation to discuss your case.<br/>
+                5.Clarify fees and payment arrangements.<br/>
+                6.Provide necessary case information to the lawyer.<br/>
+                7.Review and sign an engagement agreement.<br/>
+                8.Communicate with the lawyer online for updates and questions.<br/>
+                </p>
+        </div>
+        <button class="accordion">How to book an advocate?</button>
+        <div class="panel">To book an advocate:<br/>
+
+            1.Research and find advocates in your legal area.<br/>
+            2.Contact an advocate, discuss your case, and agree on fees.<br/>
+            3.Share necessary case information.<br/>
+            4.Sign an engagement agreement and make the required payment online.<br/>
+            5.Communicate with the advocate online for updates and questions.<br/></div>
+        
+        <button class="accordion"> Will I have to go to court?</button>
+        <div class="panel">As you know, there’s no hard-and-fast answer here because again, it’s all on a case-by-case basis.
+                           For example, while divorce can often be mediated, criminal law may have no other option besides attending a court hearing depending on the charges being brought. </div> 
+        <button class="accordion"> What is the typical legal process like?  </button>   
+        <div class="panel"> The problem is that no legal process is “typical”. While proceedings can be similar, and while case lengths can have a limited range in some instances, every single case is different. </div> 
+        
+        <button class="accordion">How to find a notary?</button>
+        <div class="panel">To find a notary:
+
+            1.Go to the notary option in the home page.<br/>
+            2.Consider mobile notary services that come to your location.<br/>
+            3.Explore notary online platforms.<br/>
+            </div>
+        <button class="accordion"> How will the quality of legal services be monitored on the platform?</button>
+        <div class="panel">
+            <p>Quality can be monitored through client feedback, reviews, and ratings. Legal service providers can be encouraged to maintain high-quality standards to receive positive feedback and incentives.</p>
+        </div>
+        <button class="accordion">Is my personal and professional information secure on Code Justice?</button>
+        <div class="panel">
+            <p> All the information is secure on the website as it is end-to-end encrypted.</p>
+        </div>
+        <button class="accordion"> How do I search for specific legal information on ?</button>
+        <div class="panel">
+            <p>There is a search bar provided on the home page where you can search the details.</p>
+        </div>
+        <button class="accordion"> What should I bring to the consultation or first meeting?</button>
+        <div class="panel">
+            <p>People may not know what they need to bring with them, or that they need to bring anything at all. Of course, the exact paperwork or documents you need may vary depending on the specific claim or case they have, but you can at least provide a general answer here. Let them know that they should bring any relevant paperwork, their ID, any existing legal documentation (including police records), and so forth. </p>
+        </div>
+        <button class="accordion">
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    /* Toggle between adding and removing the "active" class,
+                    to highlight the button that controls the panel */
+                    this.classList.toggle("active");
+
+                    /* Toggle between hiding and showing the active panel */
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+    </body>
+
+</html>

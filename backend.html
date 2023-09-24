@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .text{
+            height: 100px;
+             width: 100%;
+            font-size: 85px;
+            text-align: center;
+            background-color: blue;
+            color: white;
+        }
+   
+        
+    </style>
+</head>
+<body>
+    <div class="text"> Dashboard</div>
+    <p id="pre"></p>
+    <script>
+        var data = window.location.search;
+        var params = new URLSearchParams(data);
+        var name = params.get("Name");
+        var email = params.get("Email");
+        var phone = params.get("Phone"); // Update to match the parameter name
+        var city= (params.get("City"));
+        
+        
+        var getData = "Name: " + name + "<br>";
+        getData += "Email: " + email + "<br>";
+        getData += "Phone: " + phone + "<br>";
+        getData+="City:"+city;
+        
+
+        document.getElementById("pre").innerHTML = getData;  // Update ID to "profile"
+    </script>
+</body>
+</html>

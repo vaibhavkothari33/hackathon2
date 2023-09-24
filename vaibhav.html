@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeJustice</title>
+    <script src="code.jquery.com_jquery-3.7.0.js"></script>
+    <style>
+        .main {
+            height: 180px;
+            width: 100%;
+            text-align: center;
+            background-color: brown;
+            position: absolute;
+            top: 45px;
+
+        }
+
+        .nav {
+            height: 45px;
+            width: 100%;
+            background-color: brown;
+            cursor: pointer;
+        }
+
+        .navagation {
+            height: 45px;
+            width: 206px;
+            background-color: brown;
+            color: white;
+            float: left;
+            font-size: 35px;
+            text-align: right;
+        }
+
+        .box1 {
+            height: 50px;
+            width: 400px;
+            position: absolute;
+            top: 250px;
+            left: 485px;
+            background-color: white;
+            border: 2px solid black;
+        }
+
+        .search {
+            height: 80px;
+            width: 80px;
+            position: absolute;
+            top: 253px;
+            left: 840px;
+            font-size: 45px;
+            cursor: pointer;
+        }
+
+        #Name {
+            height: 44px;
+            width: 340px;
+            font-size: 30px;
+
+        }
+
+        .head {
+            height: 320px;
+            width: 100%;
+            background-color: white;
+            position: absolute;
+            top: 350px;
+        }
+
+        .service {
+            height: 450px;
+            width: 120px;
+            font-size: 65px;
+            position: absolute;
+
+            left: 590px;
+            top: 250px;
+
+        }
+
+        .about {
+            height: 80px;
+            width: 420px;
+            font-size: 65px;
+            text-align: center;
+            position: absolute;
+            top: 1000px;
+            left: 470px;
+
+
+
+        }
+
+        .aboutus {
+            height: 450px;
+            width: 1000px;
+            font-size: 30px;
+            position: absolute;
+            top: 1120px;
+            left: 160px;
+        }
+
+        .nav3 {
+            text-align: right;
+            position: absolute;
+            top: 180px;
+            left: 690px;
+        }
+
+        .nav6 {
+            text-align: right;
+            position: absolute;
+            top: 180px;
+            left: 490px;
+        }
+
+        .nav2 {
+            text-align: right;
+            position: absolute;
+            top: 180px;
+            left: 240px;
+        }
+
+        .nav4 {
+            text-align: right;
+            position: absolute;
+            top: 180px;
+            left: 920px;
+        }
+
+        .nav3 {
+            text-align: right;
+            position: absolute;
+            top: 180px;
+            left: 700px;
+        }
+
+        .temp {
+            height: 200px;
+            width: 350px;
+            background-color: black;
+            border: 5px solid white;
+            color: white;
+            font-size: 55px;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .temp1 {
+
+            position: absolute;
+            top: 370px;
+            left: 175px;
+        }
+
+        .temp2 {
+
+            position: absolute;
+            top: 370px;
+            left: 550px;
+        }
+
+        .temp3 {
+
+            position: absolute;
+            top: 370px;
+            left: 925px;
+        }
+
+        .temp4 {
+
+            position: absolute;
+            top: 620px;
+            left: 175px;
+        }
+
+        .temp5 {
+
+            position: absolute;
+            top: 620px;
+            left: 550px;
+        }
+
+        .temp6 {
+
+            position: absolute;
+            top: 620px;
+            left: 925px;
+        }
+
+        .whatwedo {
+            height: 80px;
+            width: 420px;
+            font-size: 65px;
+            text-align: center;
+            position: absolute;
+            top: 1550px;
+            left: 470px;
+
+
+
+        }
+
+        .whatwedo1 {
+            height: 450px;
+            width: 1000px;
+            font-size: 30px;
+            position: absolute;
+            top: 1720px;
+            left: 160px;
+        }
+
+        .contact {
+            height: 80px;
+            width: 420px;
+            font-size: 65px;
+            text-align: center;
+            position: absolute;
+            top: 2150px;
+            left: 470px;
+
+
+
+        }
+
+        .contact2 {
+            height: 450px;
+            width: 600px;
+            font-size: 30px;
+            position: absolute;
+            top: 2280px;
+            left: 700px;
+            border: 5px solid black;
+        }
+
+        .contact1 {
+            height: 540px;
+            width: 100%;
+            background-color: rgb(33, 28, 28);
+            position: absolute;
+            top: 2250px;
+        }
+
+        .stick {
+            height: 50px;
+            width: 50px;
+            font-size: 50px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .stick1 {
+            position: absolute;
+            bottom: 50px;
+            left: 30px;
+        }
+
+        .stick2 {
+            position: absolute;
+            bottom: 50px;
+            left: 90px;
+        }
+
+        .stick3 {
+            position: absolute;
+            bottom: 50px;
+            left: 150px;
+        }
+
+        .stick4 {
+            position: absolute;
+            bottom: 50px;
+            left: 210px;
+        }
+
+        .stick5 {
+            height: 50px;
+            width: 300px;
+            position: absolute;
+            bottom: 50px;
+            left: 370px;
+            font-size: 35px;
+        }
+
+        /* .nav1{
+            position: absolute;
+            top: 180px;
+        } */
+    </style>
+    <link rel="stylesheet" type="text/css" href="CodeJustice.css">
+    <link rel="stylesheet" href="nav box.css">
+</head>
+
+<body>
+    <div class="sliderbar">
+        <ul>
+            <li>
+                <a href="">
+                    <span class="icon"><ion-icon name="finger-print-outline"></ion-icon></span>
+                    <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;Logo</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <span class="icon icon1">
+                        <div class="imagepro">
+                            <img class="imagepro" src="WhatsApp Image 2023-07-20 at 5.21.33 PM.jpeg" height="30px"
+                                width="30px">
+                        </div>
+                    </span>
+                    <span class="text">&nbsp;&nbsp;;&nbsp;;&nbsp;&nbsp;&nbsp;&nbsp;Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="icon"><ion-icon name="ticket-outline"></ion-icon></span>
+                    <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;UnderWay</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="icon"><ion-icon name="gift-outline"></ion-icon></span>
+                    <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;Rewards</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;Setting</span>
+                </a>
+            </li>
+            <div class="bottom">
+
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;Logout</span>
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+
+    <div class="main"> <img src="codejusticewithoutbg.png" alt=""></div>
+
+    <div class="nav">
+        <a href="#down">
+            <div class="nav1 navagation"></div>
+        </a>
+        <a href="#about-us">
+            <div class="nav2 navagation">About Us</div>
+            <a href="#down"></a>
+            <div class="nav6 navagation">&nbsp;&nbsp;What We Do</div>
+            <a href="#down"></a>
+            <div class="nav3 navagation">Contact </div>
+            <a href="#down"></a>
+            <div class="nav4 navagation">FAQ</div>
+            <a href="#down"></a>
+            <div class="nav5 navagation"></div>
+    </div>
+
+    <!-- <div class="box1"><label for="Name"></label>
+        <input type="text" id="Name">
+    </div>
+    <div class="search"><ion-icon name="search-outline"></ion-icon></div> -->
+
+    <section>
+        <div class="service">Services</div>
+        <div class="servicebox">
+            <div class="temp temp1">Lawyer</div>
+            <div class="temp temp2">Advocates</div>
+            <div class="temp temp3">Mediators</div>
+            <div class="temp temp4">Arbitrators</div>
+            <div class="temp temp5">Document Writers</div>
+            <div class="temp temp6">Medic</div>
+        </div>
+    </section>
+    <section>
+        <div id="about-us"></div>
+        <div class="about">About Us</div>
+        <div class="aboutus">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odit voluptatem esse, quaerat autem eaque
+            deleniti, temporibus inventore accusamus sed corrupti accusantium dolores cum officia ea possimus
+            asperiores, maxime ipsa!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ad magnam blanditiis autem quos dicta
+            iusto mollitia suscipit? Quos deserunt natus quae officiis soluta a corporis eligendi ea similique quidem.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eaque reiciendis reprehenderit ex vitae dolor
+            illo facilis ad repudiandae quae non ipsum quia amet, voluptatum sit obcaecati quod in iure.</div>
+
+
+
+    </section>
+    <section>
+        <div class="whatwedo">What We Do</div>
+        <div class="whatwedo1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odit voluptatem esse, quaerat autem eaque
+            deleniti, temporibus inventore accusamus sed corrupti accusantium dolores cum officia ea possimus
+            asperiores, maxime ipsa!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ad magnam blanditiis autem quos dicta
+            iusto mollitia suscipit? Quos deserunt natus quae officiis soluta a corporis eligendi ea similique quidem.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eaque reiciendis reprehenderit ex vitae dolor
+            illo facilis ad repudiandae quae non ipsum quia amet, voluptatum sit obcaecati quod in iure.</div>
+
+
+
+    </section>
+    <section>
+        <div class="contact">Contact</div>
+        <div class="contact1">
+            <div class="stick stick1"><ion-icon name="locate-sharp"></ion-icon></div>
+            <div class="stick stick2"><ion-icon name="logo-linkedin"></ion-icon></div>
+            <div class="stick stick3"><ion-icon name="logo-instagram"></ion-icon></div>
+            <div class="stick stick4"><ion-icon name="mail-open-sharp"></ion-icon></div>
+            <div class="stick stick5"><ion-icon name="call-sharp"></ion-icon>&nbsp;&nbsp;0141-231056</div>
+        </div>
+        <div class="contact2">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1944.406856915324!2d77.58370622111879!3d28.449920509303976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cbf94deb6bc39%3A0x7ba6bedc9a2b537f!2sBennett%20University%20(Times%20of%20India%20Group)!5e0!3m2!1sen!2sin!4v1695137332276!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+    <script>
+       
+    $(document).ready(function () {
+        // Select the "About Us" link
+        const aboutUsLink = $(".nav2 .nav:nth-child(2)");
+
+        // Add a click event handler to the "About Us" link
+        aboutUsLink.click(function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+
+            const aboutUsSection = $("#about-us"); // Get the "About Us" section
+            const scrollOffset = 1000; // Scroll offset value in pixels (adjust as needed)
+
+            // Scroll to the "About Us" section with a smooth animation
+            $("html, body").animate({
+                scrollTop: aboutUsSection.offset().top - scrollOffset
+            }, 1000); // 1000 milliseconds for animation duration
+        });
+    });
+
+</script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
